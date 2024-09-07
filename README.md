@@ -1,26 +1,26 @@
-NLP Task: Text Data Preprocessing and Cleaning
+# NLP Task: Text Data Preprocessing and Cleaning
 Preprocessing text data is a crucial and often challenging step in developing AI and Machine Learning models, as clean and structured data directly impacts model performance. Below are the steps I took to clean, normalize, and prepare the text data for machine learning tasks:
 
-Steps I Took
-Loading the Data:
+# Steps I Took
+## Loading the Data:
 I loaded the text data into a pandas DataFrame for easy manipulation and analysis.
 
-Handling Missing Values:
+## Handling Missing Values:
 I checked for any missing values in the dataset and removed rows or filled the missing values with appropriate placeholders, ensuring the data was complete and ready for further preprocessing.
 
-Text Normalization:
+## Text Normalization:
 To standardize the text and make it consistent, I converted all text to lowercase. This helps ensure that words like "Machine" and "machine" are treated as the same word.
 
-Noise Removal (Punctuation, Special Characters):
+## Noise Removal (Punctuation, Special Characters):
 I removed unnecessary noise from the text data, such as punctuation, special characters, and numbers. This helps the model focus on the actual words without being distracted by irrelevant characters.
 
-Tokenization:
+## Tokenization:
 I broke the text data into individual words or tokens using word_tokenize. This step splits the sentences into words, making it easier to analyze and process.
 
-Removing Stopwords:
+## Removing Stopwords:
 Stopwords like "is," "and," "the" were removed from the tokenized data. These words are very common but do not contribute significant meaning to the text, so removing them improves model efficiency.
 
-Stemming and Lemmatization:
+## Stemming and Lemmatization:
 
 Stemming: I used a stemmer to reduce words to their base forms (e.g., "running" becomes "run"). This helps consolidate different forms of the same word.
 Lemmatization: I also lemmatized the tokens, ensuring that words are reduced to their meaningful base forms based on context. Lemmatization is often more sophisticated than stemming, as it considers the word’s part of speech.
